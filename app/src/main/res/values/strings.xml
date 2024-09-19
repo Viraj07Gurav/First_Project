@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Timetable Generator</string>
+
+    <string-array name="login_role">
+        <item>Select an option</item>
+        <item>Admin</item>
+        <item>Faculty</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="DaysOfTheWeek">
+        <item>---------------------------</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

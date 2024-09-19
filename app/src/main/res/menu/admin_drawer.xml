@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/generateTT"
+        android:title="Generate Timetable"
+        android:icon="@drawable/ic_baseline_edit_calendar_24"/>
+
+    <item
+        android:id="@+id/adminLogout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_logout_24"/>
+</menu>

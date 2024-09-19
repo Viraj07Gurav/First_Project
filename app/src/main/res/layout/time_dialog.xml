@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MeetingTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insertMeetingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint= "Meeting Id"
+                android:inputType="text"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/labelForStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MeetingTimeLayout"
+            android:layout_marginStart="25dp"
+            android:text="Start Time:"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TimePicker
+            android:id="@+id/insertStartTime"
+            android:layout_width="214dp"
+            android:layout_height="155dp"
+            android:layout_below="@id/labelForStartTime"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner">
+
+        </TimePicker>
+
+        <TextView
+            android:id="@+id/labelForEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/insertStartTime"
+            android:layout_marginStart="25dp"
+            android:text="End Time:"
+            android:textSize="18sp">
+        </TextView>
+
+        <TimePicker
+            android:id="@+id/insertEndTime"
+            android:layout_width="214dp"
+            android:layout_height="155dp"
+            android:layout_below="@id/labelForEndTime"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner">
+
+        </TimePicker>
+
+        <TextView
+            android:id="@+id/labelForDayDrpDwn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/insertEndTime"
+            android:layout_marginStart="25dp"
+            android:text="Select Day:"
+            android:textSize="18sp">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/dayDrpDwn"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/addTimeBtn"
+            android:layout_below="@+id/insertEndTime"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/labelForDayDrpDwn"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <!--BUTTON-->
+        <Button
+            android:id="@+id/addTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelForDayDrpDwn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/teal_200"
+            android:clickable="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DeptNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insertDeptName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint= "Department Name"
+                android:inputType="text"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_ "
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/labelForDeptCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DeptNameLayout"
+            android:text="Courses"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/deptCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DeptNameLayout"
+            android:layout_toEndOf="@id/labelForDeptCourse"
+            android:layout_marginTop="40dp"
+            android:spinnerMode="dialog"
+            android:backgroundTint="@color/white"
+            android:text="Select Courses"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24">
+        </Button>
+        <!--BUTTON-->
+        <Button
+            android:id="@+id/addDeptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:backgroundTint="@color/teal_200"
+            android:layout_below="@id/deptCourses"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

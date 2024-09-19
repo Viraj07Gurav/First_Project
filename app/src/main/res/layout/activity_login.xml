@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layoutsClass.Login">
+
+    <TextView
+        android:id="@+id/loginLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/loginLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLabel1"
+        android:text="Welcome!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/loginLabel3"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/loginLabel2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Login to continue."
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/unameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/loginLabel3"
+        android:layout_marginTop="50dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:id="@+id/loginUname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:inputType="textPersonName"
+            android:layout_below="@id/loginLabel3"
+            android:hint="Username"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_sharp_person_24">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pwdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/unameLayout"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPwd"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/loginRole"
+        android:spinnerMode="dropdown"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pwdLayout"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/loginRole"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Login"
+        android:textSize="22sp"
+        app:cornerRadius="25dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/studAtClg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:text="A student at our college?"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="55dp"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/studAtClg"
+        android:layout_below="@id/loginBtn"
+        android:text="Sign up"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:textStyle="bold">
+    </TextView>
+
+</RelativeLayout>
