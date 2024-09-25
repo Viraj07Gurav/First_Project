@@ -5,5 +5,5 @@ The Timetable Generator is an Android application designed to automatically crea
 * Front-End Design -XML
 * Language Used -java
 * Database- SQLite
-
-
+# Output
+![Screenshot_24-9-2024_233443_127 0 0 1](https://github.com/user-attachments/assets/f9f2e811-e127-4f98-8e42-15b59e345f76)
