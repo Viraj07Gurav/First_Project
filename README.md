@@ -1,5 +1,27 @@
 # Timetable Generator
 The Timetable Generator is an Android application designed to automatically create timetables for colleges and universities based on user inputs. It ensures that there are no scheduling conflicts between lectures and teachers. This app is intended for use by administrators, teachers, and students.Administrators can efficiently generate timetables without relying on manual pen-and-paper methods. Users are required to provide essential inputs, such as subjects, assigned teachers, respective classrooms, and time slots. The timetable generation algorithm then creates and displays the optimized timetable within the application. After logging in, both students and teachers can view their respective timetables seamlessly.
+# Objectives
+* he final system should be able to generate time tables in completely automated way 
+which will save a lot of time and effort of an institute administration.
+* Ease of use for user of system so that he/she can make automatic time table.
+* Focus on optimization of resources i.e., teachers, rooms, etc.
+* To increase the efficiency of the work.
+* It enables the department to present changes to their schedule immediately.
+* It enables the department to plan well in advance to design the student schedule.
+* It will also enable the management with updated schedule information when changes 
+occur.
+* It will enable the management to provide timely accurate schedule data
+
+# Applicability 
+The application is mostly applicable in the educational field. Anyone can easily 
+generate a timetable using this application. 
+* The Timetable Generator generates timetables for universities, colleges, schools and 
+other educational institutes keeping in mind the circumstances such as availability of 
+teachers, classrooms and labs. It also precepts different levels of limitations on 
+classrooms, semesters, teachers and subjects. 
+* Once generated, the timetable can be easily stored and, in the database, and be displayed 
+on all the user’s screen. 
+* Admin can manage all the user accounts on the system.
 # Prerequisites
 * Framework- Android studio
 * Front-End Design -XML
